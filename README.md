@@ -28,8 +28,11 @@ This script was heavily inspired by [todo.txt-cli](https://github.com/todotxt/to
    To sync across multiple computers, I put my notes directory inside of my
    Dropbox folder: `$HOME/Dropbox/Notes`.
 
-2. Symlink script to your `/usr/local/bin`.
-   ```shell
-   $ make install
-   ```
-   To remove the symlink run: `make uninstall`.
+2. Update symlink script to your `/usr/local/bin`.
+```shell
+sudo make install
+```
+>To remove the symlink 
+```shell
+sudo make uninstall
+```
