@@ -1,0 +1,19 @@
+set -euo pipefail
+
+#TODO: set me
+EDITOR="vim"
+NOTE_DIR="/tmp/notes_sh"
+#
+
+if [ -z ${NOTE_DIR+x} ]; then
+  echo "Error: Please configure and export NOTE_DIR environment variable."
+  exit 1
+fi
+
+if [ ! -d "${NOTE_DIR}" ]; then
+  # Control will enter here if $DIRECTORY doesn't exist.
+  mkdir -p "${NOTE_DIR}" 
+fi
+
+echo "using ${EDITOR}"
+echo "notes in ${NOTE_DIR}"
